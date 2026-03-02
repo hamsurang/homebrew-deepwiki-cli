@@ -1,20 +1,20 @@
 class DeepwikiCli < Formula
   desc "CLI for DeepWiki — query GitHub repo wikis without MCP overhead"
   homepage "https://github.com/hamsurang/deepwiki-cli"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.1/deepwiki-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "27f3a020860d36f1cbfe972f1b688300c9575d10d450d23c97c3f7c94837d5a2"
+      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.2.0/deepwiki-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "1e004f5df296484582724e24df59467e5e5714dcdedceaf65766319753653eb9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.1/deepwiki-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "53493402d48062f5bbcbc07444eded941c47f2cf38a20220fb7c07055817369b"
+      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.2.0/deepwiki-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0331e6c55569a771efd595668808a49e489aeec757a295f1f357d91aab353dee"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.1/deepwiki-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "042f8d14b3deadf3877782aa5d0db1b59146f9ff299efc46c189ce7af7f67022"
+      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.2.0/deepwiki-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "aa19e316e626a300ce0e26bf3ee065565e86427a10189b6bdf5c1edea8c622fb"
   end
   license "MIT"
 
