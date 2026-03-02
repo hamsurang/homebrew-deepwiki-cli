@@ -6,7 +6,7 @@ Homebrew tap for [deepwiki-cli](https://github.com/hamsurang/deepwiki-cli) — a
 
 ```sh
 brew tap hamsurang/deepwiki-cli
-brew install deepwiki
+brew install deepwiki-cli
 ```
 
 ## Usage
@@ -19,5 +19,5 @@ deepwiki wiki hamsurang/deepwiki-cli
 ## Updating
 
 ```sh
-brew update && brew upgrade deepwiki
+brew update && brew upgrade deepwiki-cli
 ```
