@@ -1,20 +1,20 @@
 class DeepwikiCli < Formula
   desc "CLI for DeepWiki — query GitHub repo wikis without MCP overhead"
   homepage "https://github.com/hamsurang/deepwiki-cli"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.0/deepwiki-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "78907a0a2328241db0b10268bd65104efa43e7ce4748914b1f5c308f9cc04970"
+      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.1/deepwiki-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "27f3a020860d36f1cbfe972f1b688300c9575d10d450d23c97c3f7c94837d5a2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.0/deepwiki-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "be803d5fdebf164ea1d7a10a8a3f9024ca444a7948949a73d3da336d4377f558"
+      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.1/deepwiki-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "53493402d48062f5bbcbc07444eded941c47f2cf38a20220fb7c07055817369b"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.0/deepwiki-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c753effabe9c48585435e7e6d53d782a30914a54434caf3aa263ae95e14dac0e"
+      url "https://github.com/hamsurang/deepwiki-cli/releases/download/v0.1.1/deepwiki-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "042f8d14b3deadf3877782aa5d0db1b59146f9ff299efc46c189ce7af7f67022"
   end
   license "MIT"
 
@@ -40,9 +40,9 @@ class DeepwikiCli < Formula
   end
 
   def install
-    bin.install "deepwiki" if OS.mac? && Hardware::CPU.arm?
-    bin.install "deepwiki" if OS.mac? && Hardware::CPU.intel?
-    bin.install "deepwiki" if OS.linux? && Hardware::CPU.intel?
+    bin.install "deepwiki-cli" if OS.mac? && Hardware::CPU.arm?
+    bin.install "deepwiki-cli" if OS.mac? && Hardware::CPU.intel?
+    bin.install "deepwiki-cli" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
